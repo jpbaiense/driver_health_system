@@ -2,12 +2,17 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">This project was developed by</h3>
+  <h3>This project was developed by</h3>
+  <img src="https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0" alt="Profile">
+  <br>
+  <a href="mailto:silva.baiense@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <br>
+  <a href="https://linkedin.com/in/jpbaiense">
+    <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn">
+  </a>
 </div>
-
-![profile][profile-shield]
-[![email][email-shield]][email-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -98,14 +103,10 @@ The MCP73831 battery management system (BMS) is a safe and effective way to char
 
 The PCB utilizes a 4-layer construction to optimize signal integrity and ensure reliable data transmission. The first and top layer is the signal layer and it primarily carries the electrical signals between various components on the PCB. For the second layer the PCB integrates the power layer, which is responsible for providing a dedicated path for delivering power to the device's components. The third layer represents the ground layer. The ground layer serves as a reference potential for all signals on the PCB, since it acts as a sink for electrical noise, preventing it from interfering with the sensitive signal paths. Finally, the last and bottom layer is the reference ground Layer and return path. The fourth layer, specifically designed for RF applications, serves as a reference ground plane for the RF circuitry and provides a return path for RF currents. This dedicated RF ground layer isolates the RF signals from the power and signal layers, minimizing noise coupling and ensuring optimal RF performance.
 
-<div class="row">
-  <div class="column">
-    <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="50%" height="50%">
-  </div>
-  <div class="column">
-    <img src="images/case.png" alt="Case" width="50%" height="50%">
-  </div>
-</div>
+<p align="center">
+  <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="30%">
+  <img src="images/case.png" alt="Case" width="30%">
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +131,7 @@ The model was developed in an Anaconda environment using TensorFlow and python d
 Data pre-processing methods were utilized to improve the model performance. Low pass filtering, Fast Fourier Transform and z-normalisation were conducted to clean the data and provide a structured matrix. 
 
 <p align="center">
-  <img src="ML_architecture/notes/raw_matrix.png" alt="Raw Matrix" width="60%" height="60%">
+  <img src="images/raw_matrix.png" alt="Raw Matrix" width="60%" height="60%">
 </p>
 
 The model will be applied to the DriveGuardian device and fitted into a driving environment case for better results.
@@ -140,7 +141,7 @@ The model will be applied to the DriveGuardian device and fitted into a driving 
 ### Mobile application
 
 <p align="center">
-  <img src="images/app_layout.png" alt="App Layout" width="70%" height="70%">
+  <img src="images/app_layout.png" alt="App Layout" width="70%" height="40%">
 </p>
 
 The data is transmitted to the mobile application via BLE and the timely health data of the driver is easily accessible, enabling immediate intervention in case of critical health situations. The application offers a user-friendly interface with an intuitive design and user-experience. A LCD, which is a frequently used component in portable devices to display data in real-time, was evaluated for the user interface, but it is more favourable to use the mobile application as the main user-interface method due to energy-efficiency and practicability.
