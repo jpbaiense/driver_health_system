@@ -1,35 +1,22 @@
 <!-- Template made by: https://github.com/othneildrew/Best-README-Template -->
 <a name="readme-top"></a>
 
-<br />
 <div align="center">
   <h3 align="center">This project was developed by</h3>
+  [![profile][profile-shield]]
+  [![email][email-shield]][email-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
 </div>
-
-[![profile][profile-shield]]
-[![email][email-shield]][email-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/jpbaiense/driver_health_system">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="130" height="130">
   </a>
-
-  <h5 align="center">DriveGuardian</h5>
 
   <p align="center">
     The DriveGuardian is an open-source project focused on the development of an Internet of Medical Things (IoMT) application. The system measures the health of drivers in their driving environment and provides crucial data to the user and the medical staff.
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
 
@@ -59,7 +46,7 @@
 <!-- ABOUT THE PROJECT -->
 ## System Overview
 
-[![System Overview Image][system-overview]]
+<img src="images/system_overview.png" alt="System Overview" width="100" height="100">
 
 The DriveGuardian integrates a variety of technologies that work side-by-side to achieve the highest performance. The goal is to measure and provide accurate data about the user's health condition. To do so, a **multi-function PCB** was designed that integrates a diversity of sensors as well as battery and memory management components. The electrical schematic and PCB were created using Altium Designer. Additionally, the device uses a **nRF52 chip** by Nordic Semiconductor to handle the communication with the sensors through I2C and Zephyr RTOS together with the wireless Bluetooth Low Energy settings. A **deep learning model** was built based on the [Deep PPG paper](https://www.mdpi.com/1424-8220/19/14/3079), the model integrates Convolutional Neural Network to estimate accurate and reliable heart rate measured by the photoplethysmogram (PPG) sensor. The DriveGuardian **mobile application** provides a friendly user-experience and displays relevant data for the user. Finally, a compact base prototype was printed to encapsulate the board and the battery, leaving enough space for the PPG sensor to function properly.
 
@@ -90,15 +77,15 @@ An in-depth investigation was carried out to identify the optimal components for
 
 The electrical schematic is divided into three sheets: 
 
-[![MCU sheet][mcu-sheet]]
+<img src="images/mcu_sheet.png" alt="MCU sheet" width="90" height="90">
 
 Built around the foundation of the nRF52832 reference schematic design, which offered a structure for the integration of necessary and optional external passive components that ensure correct and reliable SoC functionality. The internal LDO setup configuration of the nRF52832 chip (based on Nordic’s reference schematic) was chosen for this design due to the input voltage supply being dropped to 3V. An additional external 32 kHz crystal was added for the Real-time clock (RTC) operation and BLE advertising. The antenna design was carefully examined with special consideration for the antenna specifications provided by Nordic.
 
-[![Sensors sheet][sensors-sheet]]
+<img src="images/sensors_sheet.png" alt="Sensors sheet" width="90" height="90">
 
 The I2C communication protocol is used for all the sensors to communicate with the MCU. The LIS2DW12 has a full scale range of ±2g, ±4g, ±8g, or ±16g, and it offers a data output rate of up to 1600 Hz, which allows for high-resolution measurements of acceleration. The BMP581 sensor provides additional insights that can contribute to driver health assessment apart from its primary function in measuring atmospheric pressure.  The BH1790 optical sensor features a green LED emitter and a photodiode detector that work together to measure changes in blood volume in the capillaries. These changes in blood volume, known as PPG, are directly correlated with the heart rate. The AT24C512C EEPROM, a 512Kbit serial I2C EEPROM, serves as the ideal data storage solution.
 
-[![Power sheet][power-sheet]]
+<img src="images/power_sheet.png" alt="Power sheet" width="90" height="90">
 
 The MCP73831 battery management system (BMS) is a safe and effective way to charge and safeguard the single-cell lithium-ion battery attached to the device. The device offers a dual power source option, allowing it to be powered either through a battery or a USB-C connection. The STLQ015 LDO is used to regulate the power supply for the microcontroller and other electronic components. The device also integrates the MAX17260 chip that functions as a fuel gauge and it is responsible to provide accurate and real-time information about the remaining capacity of the battery.
 
@@ -106,10 +93,10 @@ The PCB utilizes a 4-layer construction to optimize signal integrity and ensure 
 
 <div class="row">
   <div class="column">
-    <img src="images/top_layer_pcb.png" alt="Top Layer PCB" style="width:100%">
+    <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="90" height="90">
   </div>
   <div class="column">
-    <img src="images/case.png" alt="Case" style="width:100%">
+    <img src="images/case.png" alt="Case" width="90" height="90">
   </div>
 </div>
 
@@ -135,7 +122,7 @@ The model was developed in an Anaconda environment using TensorFlow and python d
 
 Data pre-processing methods were utilized to improve the model performance. Low pass filtering, Fast Fourier Transform and z-normalisation were conducted to clean the data and provide a structured matrix. 
 
-[![Raw Matrix][raw-matrix]]
+<img src="images/raw_matrix.png" alt="Raw Matrix" width="90" height="90">
 
 The model will be applied to the DriveGuardian device and fitted into a driving environment case for better results.
 
@@ -143,7 +130,7 @@ The model will be applied to the DriveGuardian device and fitted into a driving 
 
 ### Mobile application
 
-[![App Layout][app-layout]]
+<img src="images/app_layout.png" alt="App Layout" width="90" height="90">
 
 The data is transmitted to the mobile application via BLE and the timely health data of the driver is easily accessible, enabling immediate intervention in case of critical health situations. The application offers a user-friendly interface with an intuitive design and user-experience. A LCD, which is a frequently used component in portable devices to display data in real-time, was evaluated for the user interface, but it is more favourable to use the mobile application as the main user-interface method due to energy-efficiency and practicability.
 
@@ -174,17 +161,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[profile-shield]: https://img.shields.io/badge/Joao%20Pedro%20Baiense-0761f0
+[profile-shield]: https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0
 [email-shield]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [email-url]: silva.baiense@gmail.com
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
@@ -195,19 +172,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [power-sheet]: images/power_sheet.png
 [raw-matrix]: ML_architecture/notes/raw_matrix.png
 [app-layout]: images/app_layout.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
