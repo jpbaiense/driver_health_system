@@ -3,15 +3,15 @@
 
 <div align="center">
   <h3>This project was developed by</h3>
-  <img src="https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0" alt="Profile">
-  <br>
-  <a href="mailto:silva.baiense@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <br>
-  <a href="https://linkedin.com/in/jpbaiense">
-    <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn">
-  </a>
+  <p float="left">
+    <img src="https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0" alt="Profile">
+    <a href="mailto:silva.baiense@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    </a>
+    <a href="https://linkedin.com/in/jpbaiense">
+      <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn">
+    </a>
+  </p>
 </div>
 
 <!-- PROJECT LOGO -->
@@ -141,7 +141,7 @@ The model will be applied to the DriveGuardian device and fitted into a driving 
 ### Mobile application
 
 <p align="center">
-  <img src="images/app_layout.png" alt="App Layout" width="70%" height="40%">
+  <img src="images/app_layout.png" alt="App Layout" width="40%" height="20%">
 </p>
 
 The data is transmitted to the mobile application via BLE and the timely health data of the driver is easily accessible, enabling immediate intervention in case of critical health situations. The application offers a user-friendly interface with an intuitive design and user-experience. A LCD, which is a frequently used component in portable devices to display data in real-time, was evaluated for the user interface, but it is more favourable to use the mobile application as the main user-interface method due to energy-efficiency and practicability.
