@@ -3,10 +3,11 @@
 
 <div align="center">
   <h3 align="center">This project was developed by</h3>
-  [![profile][profile-shield]]
-  [![email][email-shield]][email-url]
-  [![LinkedIn][linkedin-shield]][linkedin-url]
 </div>
+
+![profile][profile-shield]
+[![email][email-shield]][email-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -41,12 +42,12 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## System Overview
 
-<img src="images/system_overview.png" alt="System Overview" width="100" height="100">
+<p align="center">
+  <img src="images/system_overview.png" alt="System Overview" width="90%" height="90%">
+</p>
 
 The DriveGuardian integrates a variety of technologies that work side-by-side to achieve the highest performance. The goal is to measure and provide accurate data about the user's health condition. To do so, a **multi-function PCB** was designed that integrates a diversity of sensors as well as battery and memory management components. The electrical schematic and PCB were created using Altium Designer. Additionally, the device uses a **nRF52 chip** by Nordic Semiconductor to handle the communication with the sensors through I2C and Zephyr RTOS together with the wireless Bluetooth Low Energy settings. A **deep learning model** was built based on the [Deep PPG paper](https://www.mdpi.com/1424-8220/19/14/3079), the model integrates Convolutional Neural Network to estimate accurate and reliable heart rate measured by the photoplethysmogram (PPG) sensor. The DriveGuardian **mobile application** provides a friendly user-experience and displays relevant data for the user. Finally, a compact base prototype was printed to encapsulate the board and the battery, leaving enough space for the PPG sensor to function properly.
 
@@ -77,15 +78,21 @@ An in-depth investigation was carried out to identify the optimal components for
 
 The electrical schematic is divided into three sheets: 
 
-<img src="images/mcu_sheet.png" alt="MCU sheet" width="90" height="90">
+<p align="center">
+  <img src="images/mcu_sheet.png" alt="MCU Sheet" width="70%" height="70%">
+</p>
 
 Built around the foundation of the nRF52832 reference schematic design, which offered a structure for the integration of necessary and optional external passive components that ensure correct and reliable SoC functionality. The internal LDO setup configuration of the nRF52832 chip (based on Nordic’s reference schematic) was chosen for this design due to the input voltage supply being dropped to 3V. An additional external 32 kHz crystal was added for the Real-time clock (RTC) operation and BLE advertising. The antenna design was carefully examined with special consideration for the antenna specifications provided by Nordic.
 
-<img src="images/sensors_sheet.png" alt="Sensors sheet" width="90" height="90">
+<p align="center">
+  <img src="images/sensors_sheet.png" alt="Sensors Sheet" width="70%" height="70%">
+</p>
 
 The I2C communication protocol is used for all the sensors to communicate with the MCU. The LIS2DW12 has a full scale range of ±2g, ±4g, ±8g, or ±16g, and it offers a data output rate of up to 1600 Hz, which allows for high-resolution measurements of acceleration. The BMP581 sensor provides additional insights that can contribute to driver health assessment apart from its primary function in measuring atmospheric pressure.  The BH1790 optical sensor features a green LED emitter and a photodiode detector that work together to measure changes in blood volume in the capillaries. These changes in blood volume, known as PPG, are directly correlated with the heart rate. The AT24C512C EEPROM, a 512Kbit serial I2C EEPROM, serves as the ideal data storage solution.
 
-<img src="images/power_sheet.png" alt="Power sheet" width="90" height="90">
+<p align="center">
+  <img src="images/power_sheet.png" alt="Power Sheet" width="70%" height="70%">
+</p>
 
 The MCP73831 battery management system (BMS) is a safe and effective way to charge and safeguard the single-cell lithium-ion battery attached to the device. The device offers a dual power source option, allowing it to be powered either through a battery or a USB-C connection. The STLQ015 LDO is used to regulate the power supply for the microcontroller and other electronic components. The device also integrates the MAX17260 chip that functions as a fuel gauge and it is responsible to provide accurate and real-time information about the remaining capacity of the battery.
 
@@ -93,10 +100,10 @@ The PCB utilizes a 4-layer construction to optimize signal integrity and ensure 
 
 <div class="row">
   <div class="column">
-    <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="90" height="90">
+    <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="50%" height="50%">
   </div>
   <div class="column">
-    <img src="images/case.png" alt="Case" width="90" height="90">
+    <img src="images/case.png" alt="Case" width="50%" height="50%">
   </div>
 </div>
 
@@ -122,7 +129,9 @@ The model was developed in an Anaconda environment using TensorFlow and python d
 
 Data pre-processing methods were utilized to improve the model performance. Low pass filtering, Fast Fourier Transform and z-normalisation were conducted to clean the data and provide a structured matrix. 
 
-<img src="images/raw_matrix.png" alt="Raw Matrix" width="90" height="90">
+<p align="center">
+  <img src="ML_architecture/notes/raw_matrix.png" alt="Raw Matrix" width="60%" height="60%">
+</p>
 
 The model will be applied to the DriveGuardian device and fitted into a driving environment case for better results.
 
@@ -130,7 +139,9 @@ The model will be applied to the DriveGuardian device and fitted into a driving 
 
 ### Mobile application
 
-<img src="images/app_layout.png" alt="App Layout" width="90" height="90">
+<p align="center">
+  <img src="images/app_layout.png" alt="App Layout" width="70%" height="70%">
+</p>
 
 The data is transmitted to the mobile application via BLE and the timely health data of the driver is easily accessible, enabling immediate intervention in case of critical health situations. The application offers a user-friendly interface with an intuitive design and user-experience. A LCD, which is a frequently used component in portable devices to display data in real-time, was evaluated for the user interface, but it is more favourable to use the mobile application as the main user-interface method due to energy-efficiency and practicability.
 
@@ -162,6 +173,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [profile-shield]: https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0
+[profile-url]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [email-shield]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [email-url]: silva.baiense@gmail.com
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
