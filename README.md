@@ -4,7 +4,7 @@
 <div align="center">
   <h3>This project was developed by</h3>
   <p float="left">
-    <img src="https://img.shields.io/badge/JOAO%20PEDRO%20BAIENSE-0761f0" alt="Profile">
+    <img src="https://img.shields.io/badge/-JOAO%20PEDRO%20BAIENSE-black.svg?style=for-the-badge&logo=none&colorB=0761f0" alt="Profile">
     <a href="mailto:silva.baiense@gmail.com">
       <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
     </a>
