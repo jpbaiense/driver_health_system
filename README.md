@@ -163,7 +163,7 @@ The project is still under development, hence the results will be published soon
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Licensed under the MIT License, Copyright (c) 2024 jpbaiense
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
