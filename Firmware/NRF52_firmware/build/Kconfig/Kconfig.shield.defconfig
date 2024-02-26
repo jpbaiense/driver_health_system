@@ -1,0 +1,2 @@
+osource "c:/users/silva/documents/mestrado/tese/driverfit_workspace/project/boards/shields/*/Kconfig.defconfig"
+osource "C:/ncs/v2.5.0/nrf/boards/shields/*/Kconfig.defconfig"

@@ -1,0 +1,13 @@
+# Copyright (c) 2023 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+identifier: driverfit
+name: DriverFit
+type: mcu
+arch: arm
+ram: 64
+flash: 512
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "log.h": "c",
+        "i2c.h": "c",
+        "string.h": "c",
+        "led_strip.h": "c",
+        "eeprom.h": "c",
+        "printk.h": "c",
+        "lis2dw12.h": "c",
+        "stdio.h": "c",
+        "sensor.h": "c",
+        "device.h": "c"
+    }
+}

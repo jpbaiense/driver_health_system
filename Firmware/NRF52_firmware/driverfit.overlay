@@ -1,0 +1,89 @@
+// To get started, press Ctrl+Space to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
+
+
+//#include <zephyr/dt-bindings/led/led.h>
+
+/* #define SPI_FREQ    4000000
+#define ZERO_FRAME  0x40
+#define ONE_FRAME   0x70
+*/
+
+&i2c0 {
+    compatible = "nordic,nrf-twi";
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+
+    /* twis_device1: bmp280@76{
+        compatible = "bosch,bmp280";
+        status = "okay";
+        reg = < 0x76 >;
+        label = "BMP280";
+    }; */
+
+    lis2dw12tr: lis2dw12tr@19 {
+        compatible = "st,lis2dw12tr";
+        status = "okay";
+        label = "LIS2DW12TR";
+        reg = <0x19>;
+    };
+
+    /* twis_device3: at24c512c@50 {
+        compatible = "atmel,AT24C512C";
+        status = "okay";
+        label = "AT24C512C";
+        reg = <0x50>;
+    };
+
+    twis_device4: at24c512c@5B {
+        compatible = "rohm,BH1790GLC";
+        status = "okay";
+        label = "BH1790GLC";
+        reg = <0x5B>;
+    };
+
+    twis_device5: max17260@1A {
+        compatible = "maxim,MAX17260";
+        status = "okay";
+        label = "MAX17260";
+        reg = <0x1A>;
+    }; */
+};
+
+// &spi0 {
+   //  compatible = "nordic,nrf-spim";
+    // status = "okay";
+	// led_strip: ws2812@0 {
+		// compatible = "worldsemi,ws2812-spi";
+
+		/* SPI */
+		// reg = <0>; /* ignored, but necessary for SPI bindings */
+        // spi-max-frequency = < SPI_FREQ >;
+
+		/* WS2812 */
+		// chain-length = <16>; /* arbitrary; change at will */
+		// color-mapping = <LED_COLOR_ID_GREEN
+			//	 LED_COLOR_ID_RED
+				//  LED_COLOR_ID_BLUE>;
+		//spi-one-frame = <ONE_FRAME>;
+		// spi-zero-frame = <ZERO_FRAME>;
+	//};
+//};
+
+/* {
+	aliases {
+		led-strip = &led_strip;
+	};
+}; */
