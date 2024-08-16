@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1076284613399",
+    "project_id": "driveguardian-2301",
+    "storage_bucket": "driveguardian-2301.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076284613399:android:fd499620a929e2dfb84d52",
+        "android_client_info": {
+          "package_name": "com.jpbaiense.driverhealthapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMCYFuQUacMQyBzspTz4gSVQd_GfPHKZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076284613399:android:d3b62177bf34f182b84d52",
+        "android_client_info": {
+          "package_name": "com.jpbaiense.nrf52ble"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMCYFuQUacMQyBzspTz4gSVQd_GfPHKZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,351 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.jpbaiense.driverhealthapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+12-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:6:5-75
+12-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+13-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:7:5-72
+13-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:7:22-70
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:8:5-80
+14-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:9:5-78
+15-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+16-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:10:5-73
+16-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:10:22-71
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:11:5-66
+17-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:12:5-79
+18-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:24:5-68
+19-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:24:22-65
+20    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+20-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:25:5-79
+20-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:25:22-76
+21    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+21-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:26:5-88
+21-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:26:22-85
+22    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+22-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:27:5-82
+22-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:27:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:26:22-107
+24
+25    <permission
+25-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+26        android:name="com.jpbaiense.driverhealthapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.jpbaiense.driverhealthapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:14:5-36:19
+32        android:name="com.jpbaiense.driverhealthapp.MyApplication"
+32-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:15:9-67
+33        android:allowBackup="true"
+33-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:16:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.13.1] C:\Users\silva\.gradle\caches\transforms-3\abbcc0a185fdec8b3ce42a102fbe4e71\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+35        android:dataExtractionRules="@xml/data_extraction_rules"
+35-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:17:9-65
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:fullBackupContent="@xml/backup_rules"
+38-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:18:9-54
+39        android:icon="@mipmap/ic_launcher"
+39-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:19:9-43
+40        android:label="@string/app_name"
+40-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:20:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:21:9-54
+42        android:supportsRtl="true"
+42-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:22:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.DriverHealthApp" >
+44-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:23:9-53
+45        <activity
+45-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:25:9-35:20
+46            android:name="com.jpbaiense.driverhealthapp.MainActivity"
+46-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:26:13-70
+47            android:exported="true"
+47-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:27:13-36
+48            android:label="@string/app_name"
+48-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:28:13-45
+49            android:theme="@style/Theme.DriverHealthApp" >
+49-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:29:13-57
+50            <intent-filter>
+50-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:30:13-34:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:31:17-69
+51-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:31:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:33:17-77
+53-->C:\Users\silva\Documents\Mestrado\Tese\Pratica\AndroidApp\NRF52BLE\app\src\main\AndroidManifest.xml:33:27-74
+54            </intent-filter>
+55        </activity>
+56
+57        <service
+57-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:21:9-27:19
+58            android:name="com.google.firebase.components.ComponentDiscoveryService"
+58-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:22:13-84
+59            android:directBootAware="true"
+59-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+60            android:exported="false" >
+60-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:23:13-37
+61            <meta-data
+61-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:24:13-26:85
+62                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.ktx.FirebaseMlModeldownloaderLegacyRegistrar"
+62-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:25:17-146
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.firebase:firebase-ml-modeldownloader-ktx:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\3e2feafa9452d7dbe92a8ee9fa17f9cb\transformed\firebase-ml-modeldownloader-ktx-25.0.0\AndroidManifest.xml:26:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-analytics-ktx:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\7080946988f5fb23f08dc7ac26844fbb\transformed\firebase-analytics-ktx-22.0.2\AndroidManifest.xml:11:13-13:85
+65                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+65-->[com.google.firebase:firebase-analytics-ktx:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\7080946988f5fb23f08dc7ac26844fbb\transformed\firebase-analytics-ktx-22.0.2\AndroidManifest.xml:12:17-129
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-analytics-ktx:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\7080946988f5fb23f08dc7ac26844fbb\transformed\firebase-analytics-ktx-22.0.2\AndroidManifest.xml:13:17-82
+67            <meta-data
+67-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:26:13-28:85
+68                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseMlModelDownloaderKtxRegistrar"
+68-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:27:17-139
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:28:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:29:13-31:85
+71                android:name="com.google.firebase.components:com.google.firebase.ml.modeldownloader.FirebaseModelDownloaderRegistrar"
+71-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:30:17-134
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-ml-modeldownloader:25.0.0] C:\Users\silva\.gradle\caches\transforms-3\1f6f53210965c020dcf2bd4d706ae199\transformed\firebase-ml-modeldownloader-25.0.0\AndroidManifest.xml:31:17-82
+73            <meta-data
+73-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:37:13-39:85
+74                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+74-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:38:17-139
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:39:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+77                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+77-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+80                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+80-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\silva\.gradle\caches\transforms-3\53a54276f7fc963bd78cad1550f1fcdb\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\f9f57c93f0b911622efa15b91169c65e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+83                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+83-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\f9f57c93f0b911622efa15b91169c65e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\f9f57c93f0b911622efa15b91169c65e\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+86                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+86-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\silva\.gradle\caches\transforms-3\4d1d2a96b1fee2774ccfd746d15759bc\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+89                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+89-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\silva\.gradle\caches\transforms-3\4d1d2a96b1fee2774ccfd746d15759bc\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\silva\.gradle\caches\transforms-3\4d1d2a96b1fee2774ccfd746d15759bc\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+91        </service>
+92
+93        <property
+93-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:30:9-32:61
+94            android:name="android.adservices.AD_SERVICES_CONFIG"
+94-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:31:13-65
+95            android:resource="@xml/ga_ad_services_config" />
+95-->[com.google.android.gms:play-services-measurement-api:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\e8550b631cf16e37b2b3bd9092b62845\transformed\play-services-measurement-api-22.0.2\AndroidManifest.xml:32:13-58
+96
+97        <activity
+97-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\093ed693513023280096c2fb55a895e9\transformed\ui-test-manifest-1.7.0-alpha02\AndroidManifest.xml:23:9-25:39
+98            android:name="androidx.activity.ComponentActivity"
+98-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\093ed693513023280096c2fb55a895e9\transformed\ui-test-manifest-1.7.0-alpha02\AndroidManifest.xml:24:13-63
+99            android:exported="true" />
+99-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\093ed693513023280096c2fb55a895e9\transformed\ui-test-manifest-1.7.0-alpha02\AndroidManifest.xml:25:13-36
+100        <activity
+100-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\e11744d4d2d5d46e355b53232299f87f\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+101            android:name="androidx.compose.ui.tooling.PreviewActivity"
+101-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\e11744d4d2d5d46e355b53232299f87f\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+102            android:exported="true" />
+102-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha02] C:\Users\silva\.gradle\caches\transforms-3\e11744d4d2d5d46e355b53232299f87f\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+103
+104        <provider
+104-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+105            android:name="com.google.firebase.provider.FirebaseInitProvider"
+105-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+106            android:authorities="com.jpbaiense.driverhealthapp.firebaseinitprovider"
+106-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+107            android:directBootAware="true"
+107-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+108            android:exported="false"
+108-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+109            android:initOrder="100" />
+109-->[com.google.firebase:firebase-common:21.0.0] C:\Users\silva\.gradle\caches\transforms-3\49c3c156fa782658a962c8a182a01bef\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+110
+111        <receiver
+111-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:29:9-33:20
+112            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+112-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:30:13-85
+113            android:enabled="true"
+113-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:31:13-35
+114            android:exported="false" >
+114-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:32:13-37
+115        </receiver>
+116
+117        <service
+117-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:35:9-38:40
+118            android:name="com.google.android.gms.measurement.AppMeasurementService"
+118-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:36:13-84
+119            android:enabled="true"
+119-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:37:13-35
+120            android:exported="false" />
+120-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:38:13-37
+121        <service
+121-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:39:9-43:72
+122            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+122-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:40:13-87
+123            android:enabled="true"
+123-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:41:13-35
+124            android:exported="false"
+124-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:42:13-37
+125            android:permission="android.permission.BIND_JOB_SERVICE" />
+125-->[com.google.android.gms:play-services-measurement:22.0.2] C:\Users\silva\.gradle\caches\transforms-3\49feabc616a8480a7e4cccc4a6449b9c\transformed\play-services-measurement-22.0.2\AndroidManifest.xml:43:13-69
+126
+127        <provider
+127-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+128            android:name="androidx.startup.InitializationProvider"
+128-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+129            android:authorities="com.jpbaiense.driverhealthapp.androidx-startup"
+129-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+130            android:exported="false" >
+130-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+132-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+133                android:value="androidx.startup" />
+133-->[androidx.emoji2:emoji2:1.3.0] C:\Users\silva\.gradle\caches\transforms-3\cf1b26d6f3c35e885a22ac3f13aa8925\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+134            <meta-data
+134-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\silva\.gradle\caches\transforms-3\ad1af3c11ff74007da286a8631c70f59\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+135                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+135-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\silva\.gradle\caches\transforms-3\ad1af3c11ff74007da286a8631c70f59\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+136                android:value="androidx.startup" />
+136-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\silva\.gradle\caches\transforms-3\ad1af3c11ff74007da286a8631c70f59\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+137            <meta-data
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+138                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+139                android:value="androidx.startup" />
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+140        </provider>
+141
+142        <uses-library
+142-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\silva\.gradle\caches\transforms-3\ef6c185d611a66dcc14f5da1f75791a3\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+143            android:name="android.ext.adservices"
+143-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\silva\.gradle\caches\transforms-3\ef6c185d611a66dcc14f5da1f75791a3\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+144            android:required="false" />
+144-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\silva\.gradle\caches\transforms-3\ef6c185d611a66dcc14f5da1f75791a3\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+145
+146        <meta-data
+146-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\silva\.gradle\caches\transforms-3\b2d06d03366b860c8c16bd7968a3722b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+147            android:name="com.google.android.gms.version"
+147-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\silva\.gradle\caches\transforms-3\b2d06d03366b860c8c16bd7968a3722b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+148            android:value="@integer/google_play_services_version" />
+148-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\silva\.gradle\caches\transforms-3\b2d06d03366b860c8c16bd7968a3722b\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+149
+150        <service
+150-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+151            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+151-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+152            android:exported="false" >
+152-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+153            <meta-data
+153-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+154                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+154-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+155                android:value="cct" />
+155-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\e96a005eafa5a295d4baa2f8c4d244f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+156        </service>
+157        <service
+157-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+158            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+158-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+159            android:exported="false"
+159-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+160            android:permission="android.permission.BIND_JOB_SERVICE" >
+160-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+161        </service>
+162
+163        <receiver
+163-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+164            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+164-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+165            android:exported="false" />
+165-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\silva\.gradle\caches\transforms-3\0df4266c6196719b28031509431c3c1d\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+166        <receiver
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+167            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+168            android:directBootAware="false"
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+169            android:enabled="true"
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+170            android:exported="true"
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+171            android:permission="android.permission.DUMP" >
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+172            <intent-filter>
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+173                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+174            </intent-filter>
+175            <intent-filter>
+175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+176                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+177            </intent-filter>
+178            <intent-filter>
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+179                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+180            </intent-filter>
+181            <intent-filter>
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+182                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\silva\.gradle\caches\transforms-3\2ab3a5f1dfd7a8a956a76f9e6a61e35e\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+183            </intent-filter>
+184        </receiver>
+185    </application>
+186
+187</manifest>

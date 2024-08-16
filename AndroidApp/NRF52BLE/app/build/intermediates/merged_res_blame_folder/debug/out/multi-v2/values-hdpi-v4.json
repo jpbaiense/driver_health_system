@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jpbaiense.driverhealthapp-mergeDebugResources-64:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\silva\\.gradle\\caches\\transforms-3\\41054dff3a840dabc43bca67d27f1b7a\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

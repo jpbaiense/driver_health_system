@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/font_gothica1_bold.ttf.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/font/gothica1_bold.ttf"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_watch_device_ic.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/watch_device_ic.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_heart_image.png.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/heart_image.png"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_meter.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_meter.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/font_gothica1_medium.ttf.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/font/gothica1_medium.ttf"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_air_wave.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_air_wave.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/xml_data_extraction_rules.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/font_gothica1_black.ttf.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/font/gothica1_black.ttf"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_account_profile_circle.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/account_profile_circle.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_blood_pressure.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_blood_pressure.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/font_gothica1_regular.ttf.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/font/gothica1_regular.ttf"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_ai_model.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_ai_model.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/font_gothica1_semibold.ttf.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/font/gothica1_semibold.ttf"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_temperature.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_temperature.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/xml_backup_rules.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_heart_rate.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_heart_rate.xml"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jpbaiense.driverhealthapp-merged_res-66:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.jpbaiense.driverhealthapp-main-68:/drawable/ic_launcher_background.xml"
+    }
+]
