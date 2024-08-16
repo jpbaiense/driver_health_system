@@ -1,0 +1,2 @@
+osource "c:/ncs/thesis_board/boards/shields/*/Kconfig.shield"
+osource "C:/ncs/v2.5.0/nrf/boards/shields/*/Kconfig.shield"
