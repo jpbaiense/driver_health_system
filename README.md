@@ -121,7 +121,7 @@ The MCP73831 battery management system (BMS) is a safe and effective way to char
 The PCB utilizes a 4-layer construction to optimize signal integrity and ensure reliable data transmission. The first and top layer is the signal layer and it primarily carries the electrical signals between various components on the PCB. For the second layer the PCB integrates the power layer, which is responsible for providing a dedicated path for delivering power to the device's components. The third layer represents the ground layer. The ground layer serves as a reference potential for all signals on the PCB, since it acts as a sink for electrical noise, preventing it from interfering with the sensitive signal paths. Finally, the last and bottom layer is the reference ground Layer and return path. The fourth layer, specifically designed for RF applications, serves as a reference ground plane for the RF circuitry and provides a return path for RF currents. This dedicated RF ground layer isolates the RF signals from the power and signal layers, minimizing noise coupling and ensuring optimal RF performance.
 
 <p align="center">
-  <img src="images/3d_pcb.png" alt="3D PCB" width="30%">
+  <img src="images/logo.png" alt="3D PCB" width="30%">
   <img src="images/case.png" alt="Case" width="30%">
 </p>
 
