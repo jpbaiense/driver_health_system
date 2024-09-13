@@ -169,7 +169,7 @@ A low-pass Butterworth filter with a 4 Hz cutoff was used to remove noise from t
 The input data was organized into a three-dimensional matrix resembling an image structure, containing all the necessary information for training and evaluation. A CNN architecture was developed to process this matrix, with the structure defined as <code>[N<sub>RFFT</sub> × N<sub>seg</sub> × N<sub>ch</sub>]</code>, where <code>N<sub>RFFT</sub></code> is the number of RFFT points (66 after processing), <code>N<sub>seg</sub></code> is the number of segments (4000 per subject), and <code>N<sub>ch</sub></code> represents the 4 channels (PPG and accelerometer data). The model processes this matrix through multiple layers, ultimately estimating the heart rate as the final output.
 
 <p align="center">
-  <img src="images/cnn.png" alt="CNN Architecture" width="60%" height="20%">
+  <img src="images/cnn.png" alt="CNN Architecture" width="60%" height="60%">
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,13 +204,13 @@ The Driver Health system showcases the successful implementation of various meth
 
 <p align="center">
   <a href="https://www.ubi.pt/en/" target="_blank">
-    <img src="images/ubi.png" alt="UBI" width="40%" height="20%">
+    <img src="images/ubi.png" alt="UBI" width="10%" height="10%">
   </a>
   <a href="https://www.it.pt/" target="_blank">
-    <img src="images/it.png" alt="IT" width="40%" height="20%">
+    <img src="images/it.png" alt="IT" width="10%" height="10%">
   </a>
   <a href="https://www.ugent.be/en" target="_blank">
-    <img src="images/gent.png" alt="Gent" width="40%" height="20%">
+    <img src="images/gent.png" alt="Gent" width="10%" height="10%">
   </a>
 </p>
 
