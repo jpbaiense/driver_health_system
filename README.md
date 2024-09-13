@@ -43,7 +43,6 @@
     <li><a href="#results">Results</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#resources">Resources</a></li>
   </ol>
 </details>
 
@@ -56,12 +55,27 @@
 
 The DriveGuardian integrates a variety of technologies that work side-by-side to achieve the highest performance. The goal is to measure and provide accurate data about the user's health condition. To do so, a **multi-function PCB** was designed that integrates a diversity of sensors as well as battery and memory management components. The electrical schematic and PCB were created using Altium Designer. Additionally, the device uses a **nRF52 chip** by Nordic Semiconductor to handle the communication with the sensors through I2C and Zephyr RTOS together with the wireless Bluetooth Low Energy settings. A **deep learning model** was built based on the [Deep PPG paper](https://www.mdpi.com/1424-8220/19/14/3079), the model integrates Convolutional Neural Network to estimate accurate and reliable heart rate measured by the photoplethysmogram (PPG) sensor. The DriveGuardian **mobile application** provides a friendly user-experience and displays relevant data for the user. Finally, a compact base prototype was printed to encapsulate the board and the battery, leaving enough space for the PPG sensor to function properly.
 
+This project is closely related to my master’s thesis, titled <strong>"Intelligent Smart Wrist Band-based Health Monitoring of Car Drivers"</strong> and has resulted in the following academic contributions:
+
+<h3>Conference Papers:</h3>
+<ul>
+  <li>João Pedro Baiense, Anniek Eerdekens, Jorn Schampheleer, Margot Deryuck, Ivan Miguel Pires, and Fernando José Velez, “Intelligent PPG-based Heart Rate Signal Analysis for Car Drivers Monitoring” accepted for publication in <em>INForum 2024 - 15º Simpósio Nacional de Informática</em>, Lisboa, Portugal, September 05-06, 2024. <a href="https://www.researchgate.net/publication/383426080_Intelligent_PPG-based_Heart_Rate_Signal_Analysis_for_Car_Drivers_Monitoring" target="_blank">URI</a></li>
+  
+  <li>João Pedro Baiense, Paulo Jorge Coelho, Ivan Miguel Pires, and Fernando José Velez, “Wearable solution for health monitoring of car drivers” in <em>Proc. of ANT 2024 - The 15th Intl. Conf. on Ambient Systems, Networks and Technologies</em>, Hasselt, Belgium, April 23-25, 2024. <a href="https://www.sciencedirect.com/science/article/pii/S1877050924012365" target="_blank">URI</a></li>
+</ul>
+
+<h3>Systematic Review:</h3>
+<ul>
+  <li>João Pedro Baiense, Eftim Zdravevski, Paulo Jorge Coelho, Ivan Miguel Pires, and Fernando José Velez, “Driving healthcare monitoring with IoT and wearable devices: A Systematic Review” <em>Computing Surveys</em>.</li>
+</ul>
+
+
 Some of the technologies/skills used for this project are listed below:
-* Hardware: electronics/electrical engineering, wiring, CAD (Altium Designer) and soldering
-* Firmware: C/C++, peripherals and communication protocols (I2C, GPIO),  Zephyr RTOS, nRF Connect SDK and wireless communication protocols (Bluetooth Low Energy)
-* Machine learning: Python, data preparation tools (Pandas, NumPy, Matplotlib), cloud platform (to be implemented), TensorFlow and CNN
-* Mobile application: Android, Kotlin, Jetpack compose, dependency injection, singleton, Firebase real-time database (to be implemented) and clean architecture
-* General: Linux (Ubuntu), build systems (CMake), CI/CD (to be implemented) and version control (Git)
+* Hardware: electronics engineering, wiring, CAD (Altium Designer), and soldering
+* Firmware: C++, peripherals and communication protocols (I2C, GPIO),  Zephyr RTOS, nRF Connect SDK, and wireless communication protocols (Bluetooth Low Energy)
+* Machine learning: Python, data preparation tools (Pandas, NumPy, Matplotlib), TensorFlow and CNN
+* Mobile application: Android, Kotlin, Jetpack compose, dependency injection, singleton, and clean architecture
+* General: Linux (Ubuntu), build system (CMake), and version control (Git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,6 +84,9 @@ Some of the technologies/skills used for this project are listed below:
 ### Hardware
 
 An in-depth investigation was carried out to identify the optimal components for the application's wearable device. Parameters such as comfort, wearability, size, cost, and functionality were carefully considered in creating the Bill of Materials (BOM). The main components of the proposed BOM for the DriveGuardian project are:
+
+The hardware development process resulted in the publication of the paper "Wearable solution for health monitoring of car drivers".
+
 
 | Component           | Model         |
 | --------------------|:-------------:|
@@ -104,7 +121,7 @@ The MCP73831 battery management system (BMS) is a safe and effective way to char
 The PCB utilizes a 4-layer construction to optimize signal integrity and ensure reliable data transmission. The first and top layer is the signal layer and it primarily carries the electrical signals between various components on the PCB. For the second layer the PCB integrates the power layer, which is responsible for providing a dedicated path for delivering power to the device's components. The third layer represents the ground layer. The ground layer serves as a reference potential for all signals on the PCB, since it acts as a sink for electrical noise, preventing it from interfering with the sensitive signal paths. Finally, the last and bottom layer is the reference ground Layer and return path. The fourth layer, specifically designed for RF applications, serves as a reference ground plane for the RF circuitry and provides a return path for RF currents. This dedicated RF ground layer isolates the RF signals from the power and signal layers, minimizing noise coupling and ensuring optimal RF performance.
 
 <p align="center">
-  <img src="images/top_layer_pcb.png" alt="Top Layer PCB" width="30%">
+  <img src="images/3d_pcb.png" alt="3D PCB" width="30%">
   <img src="images/case.png" alt="Case" width="30%">
 </p>
 
@@ -112,62 +129,99 @@ The PCB utilizes a 4-layer construction to optimize signal integrity and ensure 
 
 ### Firmware
 
-The sensors drivers are still on test and debugging, since I don't currently have an oscilloscope. The driver setup was accomplished using nRF Connect SDK. The BLE connectivity is working fine with the smartphone. The source code is found at `Firmware/NRF52_firmware/` and the directory structure is automatically created by the SDK. It is as follows:
+The driver setup was accomplished using nRF Connect SDK. The source code is found at `Firmware/driveguardian/` and the directory structure is automatically created by the SDK. It is as follows:
 
-* boards
-* build
-* inc
-* src
-* CMakeLists.txt
-* driverfit.overlay 
-* prj.conf
+* build: compiled output file of the project
+* inc: include directory
+* src: source directory
+* CMakeLists.txt: building file
+* nrf52dk_nrf522832.overlay: device tree configuration file
+* prj.conf: system-wide settings file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Deep Learning model
 
-The model was developed in an Anaconda environment using TensorFlow and python data processing libraries. The dataset used is for the model training and evaluation is the PPG-DaLiA that contains PPG, 3D-accelerometer, temperature and ECG data. The PPG and accelerometer channels are used for the input layer and the ECG heart rate datapoints serve as the ground truth. A record of 15 subjects performing a variety of activities were utilized. The model integrates a CNN architecture to enhance the heart rate measured by the PPG sensor and provide valid results. 
+The model was developed in an Anaconda environment using TensorFlow and Python data processing libraries. The dataset used for model training and evaluation is the PPG-DaLiA dataset, which includes PPG (photoplethysmogram), 3D-accelerometer, temperature, and ECG data. The PPG and accelerometer channels were used as inputs to the model, while the ECG heart rate data served as the ground truth for training. A record of 15 subjects performing a variety of activities were utilized. The model integrates a Convolutional Neural Network (CNN) architecture to process the PPG sensor data and produce more accurate heart rate estimates, even in dynamic environments like car driving.
 
-Data pre-processing methods were utilized to improve the model performance. Low pass filtering, Fast Fourier Transform and z-normalisation were conducted to clean the data and provide a structured matrix. 
+This work culminated in the publication of the academic paper ["Intelligent PPG-based Heart Rate Signal Analysis for Car Drivers Monitoring"](https://www.researchgate.net/publication/383426080_Intelligent_PPG-based_Heart_Rate_Signal_Analysis_for_Car_Drivers_Monitoring), which was presented at INForum 2024, Lisbon, Portugal.
+
+To facilitate the exploratory data analysis, a Sliding Window Technique was employed to facilitate analysis, which involved segmenting the sensor data into multiple windows, each having a length of 8 seconds and a shift of 2 seconds. As a result, each segment consisted of a single vector comprising 8 seconds of PPG, 3-axis accelerometer, temperature, and ECG (label) data points.
 
 <p align="center">
-  <img src="images/raw_matrix.png" alt="Raw Matrix" width="60%" height="60%">
+  <img src="images/sliding_window.png" alt="Raw Matrix" width="60%" height="60%">
 </p>
 
-The model will be applied to the DriveGuardian device and fitted into a driving environment case for better results.
+The data processing phase began with synchronizing the sampling rates of the PPG and accelerometer data, aligning the datasets for cohesive analysis. A minor temporal discrepancy due to accelerometer interference with the PPG signal was addressed using data-shifting techniques. An isolation filter was then applied to mitigate accelerometer interference by subtracting proportionally adjusted accelerometer data from the PPG signal.
+
+A low-pass Butterworth filter with a 4 Hz cutoff was used to remove noise from the PPG signal, improving accuracy. The Real Fast Fourier Transform (RFFT) was applied to limit the frequency range to 0-4 Hz, preserving essential features while excluding unnecessary frequencies. The final step involved z-normalization of the PPG and accelerometer data, preparing it for efficient processing and enhancing the model’s performance.
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="images/eda_interfered_isolated_ppg.png" alt="Isolated PPG" width="45%"></td>
+      <td><img src="images/eda_filtered_ppg_comparison.png" alt="Filtered PPG" width="45%"></td>
+    </tr>
+    <tr>
+      <td><img src="images/eda_rfft_ppg.png" alt="rFFT PPG" width="45%"></td>
+      <td><img src="images/eda_ppg_final_signal.png" alt="PPG Final Array" width="45%"></td>
+    </tr>
+  </table>
+</div>
+
+The input data was organized into a three-dimensional matrix resembling an image structure, containing all the necessary information for training and evaluation. A CNN architecture was developed to process this matrix, with the structure defined as <code>[N<sub>RFFT</sub> × N<sub>seg</sub> × N<sub>ch</sub>]</code>, where <code>N<sub>RFFT</sub></code> is the number of RFFT points (66 after processing), <code>N<sub>seg</sub></code> is the number of segments (4000 per subject), and <code>N<sub>ch</sub></code> represents the 4 channels (PPG and accelerometer data). The model processes this matrix through multiple layers, ultimately estimating the heart rate as the final output.
+
+<p align="center">
+  <img src="images/cnn.png" alt="CNN Architecture" width="40%" height="20%">
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Mobile application
 
+The DriveGuardian mobile application is designed for simplicity and accessibility, making it easy for users to integrate into their daily routines. Its user-friendly interface presents health data clearly and includes additional features for an intuitive experience.
+
+The Start Screen serves as the primary interface when the application launches. Its key function is to verify Bluetooth Low Energy (BLE) activation, connect to the Driver Health device, and transition to the Home Screen once specific conditions are met. Additionally, location access must be enabled for a secure connection. After BLE is activated, the Start Screen allows users to initiate the connection by pressing the start button. The app then subscribes to the device's custom service and characteristic, performing checks to ensure a successful connection. Once connected, the app transitions to the Home Screen, displaying real-time data.
+
 <p align="center">
-  <img src="images/app_layout.png" alt="App Layout" width="40%" height="20%">
+  <img src="images/start_screen.jpg" alt="Start Screen" width="40%" height="20%">
 </p>
 
-The data is transmitted to the mobile application via BLE and the timely health data of the driver is easily accessible, enabling immediate intervention in case of critical health situations. The application offers a user-friendly interface with an intuitive design and user-experience. A LCD, which is a frequently used component in portable devices to display data in real-time, was evaluated for the user interface, but it is more favourable to use the mobile application as the main user-interface method due to energy-efficiency and practicability.
+The Home Screen of the DriveGuardian application serves as the central hub for real-time health data and user information. It displays vital health metrics like heart rate, temperature, and accelerometer readings and integrates the Deep Learning model to offer in-depth analysis of the user’s health status. The application connects seamlessly with the Driver Health System device via BLE to ensure up-to-date data.
 
-The Android application implements clean architecture, a MVVM approach and jetpack compose for the layout. It is planned to integrate Firebase to store the user's personal data (name, userid) and potential relevant information.
+<p align="center">
+  <img src="images/home_screen.jpeg" alt="Home Screen" width="40%" height="20%">
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Results
 
-The project is still under development, hence the results will be published soon.
+The final model architecture successfully estimates accurate and reliable heart rate values. It achieved a Mean Absolute Error (MAE) of 3.450 ± 1.324 bpm and a Mean Squared Error (MSE) of 69.50 ± 93.57 bpm², representing a 54.9% reduction in MAE compared to the original CNN model. This improvement is due to advanced data processing techniques that reduce noise and enhance model performance. This achievement highlights significant advancements in heart rate estimation and provides valuable insights for further research.
+
+The Driver Health system showcases the successful implementation of various methods, highlighting the robust and high-performance of the developed firmware, deep learning model and mobile application. These sensors capture multiple data points, providing critical user information for real-time analysis. The firmware ensures accurate data transmission and reliable BLE connection. The heart rate estimation model produced outstanding results. Additionally, the custom mobile application features seamless connectivity with the Driver Health device.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgements
 
-<!-- UBI LOGO, IT LOGO, WAVES LOGO -->
+<p align="center">
+  <a href="https://www.ubi.pt/en/" target="_blank">
+    <img src="images/ubi.jpeg" alt="UBI" width="40%" height="20%">
+  </a>
+  <a href="https://www.it.pt/" target="_blank">
+    <img src="images/it.jpeg" alt="IT" width="40%" height="20%">
+  </a>
+  <a href="https://www.ugent.be/en" target="_blank">
+    <img src="images/gent.jpeg" alt="Gent" width="40%" height="20%">
+  </a>
+</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 Licensed under the MIT License, Copyright (c) 2024 jpbaiense
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Resources
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
