@@ -131,12 +131,12 @@ The PCB utilizes a 4-layer construction to optimize signal integrity and ensure 
 
 The driver setup was accomplished using nRF Connect SDK. The source code is found at `Firmware/driveguardian/` and the directory structure is automatically created by the SDK. It is as follows:
 
-* build: compiled output file of the project
-* inc: include directory
-* src: source directory
-* CMakeLists.txt: building file
-* nrf52dk_nrf522832.overlay: device tree configuration file
-* prj.conf: system-wide settings file
+* build -> compiled output file of the project
+* inc -> include directory
+* src -> source directory
+* CMakeLists.txt -> building file
+* nrf52dk_nrf522832.overlay -> device tree configuration file
+* prj.conf -> system-wide settings file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +144,7 @@ The driver setup was accomplished using nRF Connect SDK. The source code is foun
 
 The model was developed in an Anaconda environment using TensorFlow and Python data processing libraries. The dataset used for model training and evaluation is the PPG-DaLiA dataset, which includes PPG (photoplethysmogram), 3D-accelerometer, temperature, and ECG data. The PPG and accelerometer channels were used as inputs to the model, while the ECG heart rate data served as the ground truth for training. A record of 15 subjects performing a variety of activities were utilized. The model integrates a Convolutional Neural Network (CNN) architecture to process the PPG sensor data and produce more accurate heart rate estimates, even in dynamic environments like car driving.
 
-This work culminated in the publication of the academic paper ["Intelligent PPG-based Heart Rate Signal Analysis for Car Drivers Monitoring"](https://www.researchgate.net/publication/383426080_Intelligent_PPG-based_Heart_Rate_Signal_Analysis_for_Car_Drivers_Monitoring), which was presented at INForum 2024, Lisbon, Portugal.
+This work resulted in the publication of the academic paper ["Intelligent PPG-based Heart Rate Signal Analysis for Car Drivers Monitoring"](https://www.researchgate.net/publication/383426080_Intelligent_PPG-based_Heart_Rate_Signal_Analysis_for_Car_Drivers_Monitoring), which was presented at INForum 2024, Lisbon, Portugal.
 
 To facilitate the exploratory data analysis, a Sliding Window Technique was employed to facilitate analysis, which involved segmenting the sensor data into multiple windows, each having a length of 8 seconds and a shift of 2 seconds. As a result, each segment consisted of a single vector comprising 8 seconds of PPG, 3-axis accelerometer, temperature, and ECG (label) data points.
 
@@ -157,22 +157,19 @@ The data processing phase began with synchronizing the sampling rates of the PPG
 A low-pass Butterworth filter with a 4 Hz cutoff was used to remove noise from the PPG signal, improving accuracy. The Real Fast Fourier Transform (RFFT) was applied to limit the frequency range to 0-4 Hz, preserving essential features while excluding unnecessary frequencies. The final step involved z-normalization of the PPG and accelerometer data, preparing it for efficient processing and enhancing the model’s performance.
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="images/eda_interfered_isolated_ppg.png" alt="Isolated PPG" width="45%"></td>
-      <td><img src="images/eda_filtered_ppg_comparison.png" alt="Filtered PPG" width="45%"></td>
-    </tr>
-    <tr>
-      <td><img src="images/eda_rfft_ppg.png" alt="rFFT PPG" width="45%"></td>
-      <td><img src="images/eda_ppg_final_signal.png" alt="PPG Final Array" width="45%"></td>
-    </tr>
-  </table>
+    <img src="images/eda_interfered_isolated_ppg.png" alt="Isolated PPG" width="45%">
+    <img src="images/eda_filtered_ppg_comparison.png" alt="Filtered PPG" width="45%">
+</div>
+
+<div align="center">
+    <img src="images/eda_rfft_ppg.png" alt="rFFT PPG" width="45%">
+    <img src="images/eda_ppg_final_signal.png" alt="PPG Final Array" width="45%">
 </div>
 
 The input data was organized into a three-dimensional matrix resembling an image structure, containing all the necessary information for training and evaluation. A CNN architecture was developed to process this matrix, with the structure defined as <code>[N<sub>RFFT</sub> × N<sub>seg</sub> × N<sub>ch</sub>]</code>, where <code>N<sub>RFFT</sub></code> is the number of RFFT points (66 after processing), <code>N<sub>seg</sub></code> is the number of segments (4000 per subject), and <code>N<sub>ch</sub></code> represents the 4 channels (PPG and accelerometer data). The model processes this matrix through multiple layers, ultimately estimating the heart rate as the final output.
 
 <p align="center">
-  <img src="images/cnn.png" alt="CNN Architecture" width="40%" height="20%">
+  <img src="images/cnn.png" alt="CNN Architecture" width="60%" height="20%">
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -207,13 +204,13 @@ The Driver Health system showcases the successful implementation of various meth
 
 <p align="center">
   <a href="https://www.ubi.pt/en/" target="_blank">
-    <img src="images/ubi.jpeg" alt="UBI" width="40%" height="20%">
+    <img src="images/ubi.png" alt="UBI" width="40%" height="20%">
   </a>
   <a href="https://www.it.pt/" target="_blank">
-    <img src="images/it.jpeg" alt="IT" width="40%" height="20%">
+    <img src="images/it.png" alt="IT" width="40%" height="20%">
   </a>
   <a href="https://www.ugent.be/en" target="_blank">
-    <img src="images/gent.jpeg" alt="Gent" width="40%" height="20%">
+    <img src="images/gent.png" alt="Gent" width="40%" height="20%">
   </a>
 </p>
 
